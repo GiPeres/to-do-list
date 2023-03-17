@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(45deg, purple, pink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .all{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    width: 700px;
+    justify-content: space-between;
+  }
+
+  .title{
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(237, 188, 188);
+    border: solid 5px;
+    max-width: 700px;
+    border-style: solid;
+    border-radius: 10px;
+    color: purple;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .item{
+    margin-top: 50px;
+    display: flex;
+    max-width: 700px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(237, 188, 188);
+    font-size: large;
+  }
+
+  .item:hover{
+    background-color: black;
+    color: white;
+    transition-timing-function: ease-in;
+    transition-delay: 60ms;
+    transition-duration: .4s;
+  }
+
+  input[type=checkbox]{
+    transform: scale(1.6);
+  }
+
+  input[type=text]{
+    margin-top: 40px;
+    background-color: rgb(240, 230, 241);
+    border: solid 1px purple;
+    border-radius: 10px;
+    height: 70px;
+    font-size: larger;
+    width: 700px;
+    box-shadow: 1px 1px 5px black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: unset;
+  }
+
+  input::placeholder{
+    font-style: italic;
+    font-size: 32px;
+  }
+
+  input[type=text]:hover{
+    border: solid 1px rgb(92, 12, 92);
+    box-shadow: 1px 1px 9px black;
+    font-size: xx-large;
+    transition-timing-function: ease-in;
+    transition-duration: .5s;
+  }
+
+  .tarefa-input:checked + .tarefa-texto{
+    text-decoration: line-through;
+  }
+
+
+
+  
